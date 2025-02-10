@@ -32,6 +32,7 @@ st.markdown('''<style> .stButton>button {
     width: 25em;
 }</style>''', unsafe_allow_html=True)
 
+st.image("sunrise.jpg")
           
 # Charger les données 
 load_(pd.read_csv('data/oridinateurs_data_scrape.csv'), 'Ordinateurs data 1', '1')
