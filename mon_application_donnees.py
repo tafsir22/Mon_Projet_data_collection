@@ -3,18 +3,21 @@ import pandas as pd
 
 
 st.markdown("<h1 style='text-align: center; color: black;'>MY DATA APP</h1>", unsafe_allow_html=True)
-KOBO_FORM_URL = "https://kf.kobotoolbox.org/#/forms/abZk8yQA2bFNni3KGHn8Rb"
 
-st.title("Formulaire d'évaluation d'un application KoboToolbox intégré à Streamlit")
 st.markdown("""
 This app allows you to download scraped data on ordinateurs, telephones and tv home cinema from expat-dakar 
 * **Python libraries:** base64, pandas, streamlit
 * **Data source:** [Expat-Dakar](https://www.expat-dakar.com/).
-f'<iframe src="{KOBO_FORM_URL}" width="100%" height="600"></iframe>',
-    unsafe_allow_html=True
+
 
 """)
+KOBO_FORM_URL = "https://kf.kobotoolbox.org/#/forms/abZk8yQA2bFNni3KGHn8Rb"
 
+st.title("Formulaire d'évaluation d'un application KoboToolbox intégré à Streamlit")
+st.markdown(
+    f'<iframe src="{KOBO_FORM_URL}" width="100%" height="600"></iframe>',
+    unsafe_allow_html=True
+)
 
 
 
