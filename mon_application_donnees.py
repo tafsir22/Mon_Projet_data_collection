@@ -11,17 +11,6 @@ This app allows you to download scraped data on ordinateurs, telephones and tv h
 
 
 """)
-KOBO_FORM_URL = "https://kf.kobotoolbox.org/#/forms/abZk8yQA2bFNni3KGHn8Rb"
-
-st.title("Formulaire d'évaluation d'un application KoboToolbox intégré à Streamlit")
-st.markdown(
-    f'<iframe src="{KOBO_FORM_URL}" width="100%" height="600"></iframe>',
-    unsafe_allow_html=True
-)
-
-
-
-
 
 # Fonction de loading des données
 def load_(dataframe, title, key) :
@@ -49,6 +38,15 @@ load_(pd.read_csv('data/oridinateurs_data_scrape.csv'), 'Ordinateurs data 1', '1
 load_(pd.read_csv('data/telephone_data_scrape.csv'), 'Telephones data 2', '2')
 load_(pd.read_csv('data/tv_home_cinema_data_scrape.csv'), 'TV Home Cinema 3', '3')
 
+
+
+KOBO_FORM_URL = "https://kf.kobotoolbox.org/#/forms/abZk8yQA2bFNni3KGHn8Rb"
+
+st.title("Formulaire d'évaluation d'un application KoboToolbox intégré à Streamlit")
+st.markdown(
+    f'<iframe src="{KOBO_FORM_URL}" width="100%" height="600"></iframe>',
+    unsafe_allow_html=True
+)
 
 
 
